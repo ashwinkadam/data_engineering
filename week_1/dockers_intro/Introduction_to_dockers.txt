@@ -1,0 +1,8 @@
+learned what is docker how and why it is useful to create environments for test and other stuffs.
+created a docker file and define the image, that was a python images
+build a simple pipeline code to kick start the docker.
+
+some useful dockers links
+https://docs.docker.com/engine/reference/commandline/image_prune/
+https://www.raywenderlich.com/9159-docker-on-macos-getting-started
+
