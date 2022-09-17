@@ -1,0 +1,17 @@
+In this part we learned how to ingest data in postgres database using python script, cool stuff!!!
+
+1. docker compose file is created (.yaml extension) this file will acts as a reference, wherein we will edit our commands.
+which we will fire on command line to create postgres database image.
+
+2. we ran docker command to pull the postgres image
+
+3. LETS BUILD A DATAPIPELINE !!!!!!!!!!!!!!!!!!
+
+4. will build a script to ingest data in postgres. The data is ingested in chunks.For simplicity to see how things works, I have
+used ipy notebook to run the script. But in production environment we fire .py file from command line.
+will try to build a production ready script as we procced the course.
+
+Dataset : https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+
+
