@@ -1,0 +1,25 @@
+#if we pull pgadmin image it will be in a diffenet container. 
+#so will have two containers, one with postgres and other with pgadmin
+#we need to connect both of this containers.
+#docker network to connect both, the postgres container and pgadmin container. 
+docker network create pg-network
+
+#include the network config in postgres image command and run again
+docker run -it \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    --network=pg-network \
+    --name pg-database \
+    postgres:13
+
+#also modify the pgadmin image and include the network config
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  --network=pg-network \
+  --name pgadmin-2 \
+  dpage/pgadmin4

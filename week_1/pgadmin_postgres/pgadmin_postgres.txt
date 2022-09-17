@@ -1,0 +1,28 @@
+wrting SQL queries through command looks so unappealing.
+No worries, PGadmin got you. 
+Pgadmin gives a interactive GUI through which we can interact with our database easily and very user friendly.
+Now the task here is to connect the pgadmin with the postgress database.
+Also both the images, pgadmin image and postgres image should be connected to each other.
+
+
+Note:
+sometimes the docker build command will throw error that container is in use, something like that.
+In that case make sure that you stop all the containers.
+followeing are some useful docker commands.
+
+This prints the IDs all of containers that have exited, and removes them.
+We can list all ouf our containers using:
+docker ps -a
+
+We can list the currently running containers using:
+docker ps
+
+If we want to stop a running container, we use:
+docker stop <containerID>
+
+We can remove it then using:
+docker rm <containerID>
+
+
+once the connection between both the containers are established. we go to localhost:8080 to create server.
+Note: makes sure databsename/hostname --> --name pg-database <--- name you have passed while creating the postgres image with network  
