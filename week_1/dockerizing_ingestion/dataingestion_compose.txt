@@ -12,3 +12,7 @@ python data_ingestion.py \
   --db=ny_taxi \
   --table=yellow_taxi \
   --path="/Users/ashwinkadam/yellow_tripdata_2022-01 (1).parquet"
+
+some useful links
+https://www.confessionsofadataguy.com/pandas-dataframe-to_sql-how-you-should-configure-it-to-not-be-that-guy/
+
