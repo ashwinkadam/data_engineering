@@ -1,0 +1,14 @@
+We created parametarized script which can be fire from command line.
+Reduced the data processing time to half for each chunk by setting the method to "multi".
+Next step to further optimzed the processing we need to implement parallel processing.
+
+
+path="/Users/ashwinkadam/yellow_tripdata_2022-01 (1).parquet"
+python data_ingestion.py \
+  --user=root \
+  --password=root \
+  --host=localhost \
+  --port=5432 \
+  --db=ny_taxi \
+  --table=yellow_taxi \
+  --path="/Users/ashwinkadam/yellow_tripdata_2022-01 (1).parquet"
