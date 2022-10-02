@@ -47,3 +47,24 @@ brew install hashicorp/tap/terraform
 - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com 
 
 
+Now we will work on Terraform. <br />
+We will require three files(configuration files). <br />
+- main.tf
+- variables.tf
+- .terraform-version
+
+For now I am not deep diving into these files. What does each block of code does in the file.<br />
+To get started with the terraform. First create a directory to have all the above three files.<br />
+
+Run Below three commands to configure the changes.
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+After successful completion of these commands will see BigQuery Data Warehouse and Google Cloud Storage Data Lake craeted in GCP.
+Done.
+
+Note : Make sure you don't commit the credentials files and other useless file while tracking your progess on github. 
+
