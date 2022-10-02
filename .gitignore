@@ -1257,3 +1257,4 @@ week_1/docker_data_ingestion/ny_taxi_postgres_data/pg_xact/0000
 week_1/docker_data_ingestion/ny_taxi_postgres_data/postgresql.auto.conf
 week_1/docker_data_ingestion/ny_taxi_postgres_data/postgresql.conf
 week_1/docker_data_ingestion/ny_taxi_postgres_data/postmaster.opts
+week_1/terraform_gcp/terraform.tfstate
