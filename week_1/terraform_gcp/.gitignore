@@ -1,5 +1,4 @@
-.terraform-version
-.terraform.lock.hcl
-.terraform/
+terraform.lock.hcl
+terraform/
 
 
