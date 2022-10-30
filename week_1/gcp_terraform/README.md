@@ -68,3 +68,14 @@ Done.
 
 Note : Make sure you don't commit the credentials files and other useless file while tracking your progess on github. 
 
+## Setting up VM with GCP
+
+We are getting VM from GCP to run all the required things, like docker, python etc
+
+Following steps need to perform to setup the VM <br />
+- Create a directory in root ```mkdir ~/.ssh```
+- run the command in ssh directory to create a ssh key ```ssh-keygen -t rsa -f gpc -C <yourname> -b 2048 ```
+- Once the command is ran successfully, their will be two keys, public and private key. (We will work with public key only)
+- cat the public key, copy the content and add the public key GCP ssh key.
+- Once key is saved, now create the VM by selecting required VM configurations.
+- 
