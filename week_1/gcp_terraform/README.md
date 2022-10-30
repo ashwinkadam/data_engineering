@@ -78,4 +78,6 @@ Following steps need to perform to setup the VM <br />
 - Once the command is ran successfully, their will be two keys, public and private key. (We will work with public key only)
 - cat the public key, copy the content and add the public key GCP ssh key.
 - Once key is saved, now create the VM by selecting required VM configurations.
-- 
+
+
+Next we will setup Anaconda and docker in the VM <br/>
